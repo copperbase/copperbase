@@ -1,6 +1,8 @@
 ---
 name: Bug report
 about: Create a report bug
-title: 'bug report'
+title: 'bug:'
 labels: 'bug'
+type: 'bug'
+
 ---
