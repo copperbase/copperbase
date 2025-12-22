@@ -1,8 +1,14 @@
-import {createRoot} from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import "./index.css";
-import {RouterProvider} from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import routes from "@/routes/index.jsx";
+import { createRenderer } from "fela";
+import { RendererProvider as RenderFelaProvider } from "react-fela";
+
+const render = createRenderer();
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={routes}/>
+  <RenderFelaProvider renderer={render}>
+    <RouterProvider router={routes} />
+  </RenderFelaProvider>
 );
