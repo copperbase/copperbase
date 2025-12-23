@@ -1,2 +1,12 @@
+packages:
+  - packages/*
+  - apps/*
+
+configDependencies:
+  my-configs: 1.0.1+sha512-co0NtVydVwaYLX0UQSxiWNrrzqiSx2L6W9Xsm6ohIE/x6pNrhuxC5Ei2/kKUO/qoMbtV4xmGgwqOmGa1E5N1Aw==
+
 ignoredBuiltDependencies:
   - msw
+
+onlyBuiltDependencies:
+  - nx
