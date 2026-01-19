@@ -1,11 +1,11 @@
-import {createBrowserRouter} from "react-router-dom";
+import { createBrowserRouter } from "react-router";
 import App from "@/App.jsx";
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
-  }
-])
+    element: <App />,
+  },
+]);
 
 export default routes;
